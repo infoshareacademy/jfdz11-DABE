@@ -25,7 +25,7 @@ const levelHardClasses = [
   "darkkhaki"
 ];
 
-const levelHardNodes = _ => {
+const getLevelHardNodes = _ => {
   levelHardClasses.forEach(levelHardClass => {
     const board = document.querySelector("#board");
     const card = document.createElement("div");

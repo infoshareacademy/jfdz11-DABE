@@ -17,7 +17,7 @@ const levelEasyClasses = [
   "cadetblue"
 ];
 
-const levelEasyNodes = _ => {
+const getLevelEasyNodes = _ => {
   levelEasyClasses.forEach(levelEasyClass => {
     const board = document.querySelector(".board");
     const card = document.createElement("div");
