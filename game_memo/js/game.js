@@ -5,6 +5,7 @@ let pointCunter = 0;
 let activeCard = "";
 const activeCards = [];
 let levelHard;
+let pause = true;
 const valueInput = document.getElementById("userNameInput");
 
 function discoverCard() {
@@ -119,12 +120,18 @@ function hideInitialBoard() {
 
 function addListenersToButtons() {
   document.getElementById("pause").onclick = _ => {
-    timer.stop();
-    removeListenersFromAllAccessibleCards();
+    if (pause) {
+      timer.stop();
+      removeListenersFromAllAccessibleCards();
+      pause = false;
+    }
   };
   document.getElementById("return").onclick = _ => {
-    timer.start();
-    addListenersForCards();
+    if (!pause) {
+      timer.start();
+      addListenersForCards();
+      pause = true;
+    }
   };
   document.getElementById("restart").onclick = _ => location.reload();
 }

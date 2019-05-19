@@ -1,74 +1,72 @@
 #userName {
-    display: flex;
-    position: fixed;
-    z-index: 1;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.4);
+  display: flex;
+  position: fixed;
+  z-index: 1;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .userName-content {
-    align-self: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 50vw;
-    background-color: #fefefe;
-    font-size: 36px;
-    padding: 20px;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+  background-color: #fefefe;
+  font-size: 36px;
+  padding: 20px;
 }
 
 #userNameInput {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .level_buttons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .btn {
-    margin: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .btn_func {
-    padding: 0 10px;
-    border:0;
-    border-radius: 5px;
-    height: 32px;
-    width: 100%;
-    background: rgb(152, 224, 241);
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); 
+  padding: 0 10px;
+  border: 0;
+  border-radius: 5px;
+  height: 32px;
+  width: 100%;
+  background: rgb(152, 224, 241);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .btn_func:hover {
-    background: rgb(146, 146, 146);
-    color: white;
+  background: rgb(146, 146, 146);
+  color: white;
 }
 
 .btn_func:focus {
-    outline: none;
+  outline: none;
 }
 
 #hard:hover {
-    background: rgb(255, 1, 1);
-    color: white;
+  background: rgb(255, 1, 1);
+  color: white;
 }
 
 @media (orientation: portrait) {
-
-    .userName-content {
-        margin: 1vw 2vh;
-        flex-basis: 100%;
-        flex-grow: 1;
-        padding: 10px;
-    }
-
+  .userName-content {
+    margin: 1vw 2vh;
+    flex-basis: 100%;
+    flex-grow: 1;
+    padding: 10px;
+  }
 }

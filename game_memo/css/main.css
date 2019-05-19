@@ -78,6 +78,8 @@ button:focus {
 .cardEasy,
 .cardHard {
   flex-basis: 24vh;
+
+  flex-shrink: 1;
   height: 24vh;
   background-color: rgb(166, 219, 215);
 }
@@ -87,6 +89,7 @@ button:focus {
     margin: 0;
     padding: 0;
     width: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -96,7 +99,7 @@ button:focus {
     margin: 0;
     padding: 0;
     width: 100%;
-    flex-basis: 4vh;
+    flex-basis: 3.5vh;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -153,8 +156,8 @@ button:focus {
   }
 
   .cardHard {
-    flex-basis: 24vw;
-    height: 15vh;
+    flex-basis: 24.7vw;
+    height: 15.3vh;
     background-color: rgb(166, 219, 215);
   }
 }
