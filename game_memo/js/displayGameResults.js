@@ -24,14 +24,14 @@ function createResultsNodes(arr, listOfResults) {
 function displayLevelHardResults() {
   if (localStorageGameResults === null) {
     gameResults[1].push({
-      user: valueInput,
+      user: valueInput.value,
       gameTime: timer.gameTime.toFixed(2)
     });
     saveToLocalStorage(gameResults);
     createResultsNodes(gameResults[1], "results-list_hard");
   } else {
     localStorageGameResults[1].push({
-      user: valueInput,
+      user: valueInput.value,
       gameTime: timer.gameTime.toFixed(2)
     });
     sortGameResults(localStorageGameResults[1]);
@@ -47,14 +47,14 @@ function displayLevelHardResults() {
 function displayLevelEasyResults() {
   if (localStorageGameResults === null) {
     gameResults[0].push({
-      user: valueInput,
+      user: valueInput.value,
       gameTime: timer.gameTime.toFixed(2)
     });
     saveToLocalStorage(gameResults);
     createResultsNodes(gameResults[0], "results-list_easy");
   } else {
     localStorageGameResults[0].push({
-      user: valueInput,
+      user: valueInput.value,
       gameTime: timer.gameTime.toFixed(2)
     });
     sortGameResults(localStorageGameResults[0]);
